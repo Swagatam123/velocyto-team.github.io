@@ -4,6 +4,13 @@ layout: default
 
 <p>&nbsp;</p>
 <div class="home">
+  <ul class="post">
+  <li>
+    <span class="post-date">{{ home.date | date: "%b %-d, %Y" }}</span>
+    <a class="post-link" href="{{ home.url | prepend: site.baseurl }}">{{ home.title }}</a>
+    {{ home.excerpt }}
+  </li>
+  </ul>
   <ul class="posts">
     {% for post in site.posts %}
       <li>
