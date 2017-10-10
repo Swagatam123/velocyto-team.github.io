@@ -5,12 +5,9 @@ layout: default
 <p>&nbsp;</p>
 <div class="home">
   <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        {{ post.excerpt }}
-      </li>
-    {% endfor %}
+    Welcome to velocyto homepage! `velocyto` is a package for the analysis of expression dynamics single cell RNA seq data.
+    
+    `veloctyo` comes into differente tastes so you can chose the implementation that fits you best:
+
   </ul>
 </div>
